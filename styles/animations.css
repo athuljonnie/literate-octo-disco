@@ -1,0 +1,46 @@
+.tools-section{
+    animation: about 2s ease 0s 1 normal forwards;
+}
+@keyframes about {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.about-section{
+    animation: about1 1s ease 0s 1 normal forwards;
+}
+
+@keyframes about1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.footer{
+	animation: footeranim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes footeranim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
