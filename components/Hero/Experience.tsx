@@ -66,7 +66,7 @@ const Experience:React.FC = () => {
                 <li>Designed and developed a full-stack application, resulting in a 60% increase in sales.</li>
                 <li>Enhanced customer interaction by integrating zoho forms and salesIQ.</li>
                 <li>Migrated a Create React App to Next.js to improve SEO and performance.</li>
-                <li>ested and developed APIs for PortaOne to ensure reliability and scalability.</li>
+                <li>Tested and developed APIs for PortaOne to ensure reliability and scalability.</li>
                 <li>Improved code quality and application performance by implementing Redux for state management.</li>
                 <li>Developed a backend system with authentication to create B2B communication blogs, optimized for complete SEO.</li>
                 <li>Developed a backend system with authentication for creating customer support documentation, fully optimized for SEO.</li>
@@ -107,7 +107,7 @@ const Experience:React.FC = () => {
               <ul className='list-disc list-inside font-mono'>
                 <li>Acquired foundational programming skills through self-learning and practice.</li>
                 <li>Developed and deployed a full-stack e-commerce application using Node.js, Handlebars, MongoDB, and Express.js.</li>
-                <li>Recognized with 'Communication of the Month' award for exceptional communication skills.</li>             
+                <li>Recognized with &lsquo;Communication of the Month&lsquo; award for exceptional communication skills.</li>             
               </ul>
             </li>
           
