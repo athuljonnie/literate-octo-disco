@@ -20,7 +20,7 @@ const Experience:React.FC = () => {
         >
           <p
             className={clsx(
-              "font-dot text-sm pb-2 pt-10 border-b-[1px] sm:text-base md:text-lg lg:text-xl ease-in duration-300",
+              "font-dot text-2xl pb-2 pt-10 border-b-[1px] sm:text-base md:text-lg lg:text-xl ease-in duration-300",
               {
                 "text-orange1 border-white": !isDarkMode,
                 "text-electric border-sky-600": isDarkMode,
@@ -33,7 +33,7 @@ const Experience:React.FC = () => {
             <li className="py-5">
               <h4
                 className={clsx(
-                  "font-dot text-sm pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                  "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
                   {
                     "text-red": !isDarkMode,
                     "text-blue1": isDarkMode,
@@ -75,7 +75,7 @@ const Experience:React.FC = () => {
             <li className="py-5">
               <h4
                 className={clsx(
-                  "font-dot text-sm pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                  "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
                   {
                     "text-red": !isDarkMode,
                     "text-blue1": isDarkMode,
