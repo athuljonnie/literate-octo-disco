@@ -69,18 +69,19 @@ const AboutSection: React.FC = () => {
             Resume
           </button>
 
-          <button
-            className={clsx(
-              "py-2 px-5 font-dot bg-transparent rounded-[60px]",
-              "border-[1px] text-orange", // Shared classes
-              {
-                "text-gray-500 border-electric": isDarkMode, // Adjust these for dark mode
-                "text-orange1 border-orange1": !isDarkMode,
-              }
-            )}
-          >
-            Say Hi!
-          </button>
+   <button
+  className={clsx(
+    "py-2 px-5 font-dot bg-transparent rounded-[60px] border-[1px]",
+    {
+      "text-gray-500 border-electric": isDarkMode,
+      "text-orange1 border-orange1": !isDarkMode,
+    }
+  )}
+  onClick={() => window.open("https://www.linkedin.com/in/athuljohney", "_blank")}
+>
+  Say Hi!
+</button>
+
         </div>
 
         <Projects />
