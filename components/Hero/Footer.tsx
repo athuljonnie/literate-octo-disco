@@ -9,13 +9,7 @@ const Footer: React.FC = () => {
     (state: RootState) => state.darkMode.isDarkMode
   );
   return (
-<div className="flex flex-col min-h-auto hidden sm:flex">
-{/* Main content of your page */}
-      <div className="flex-grow">
-        {/* Your other page content */}
-      </div>
-
-      {/* Footer Section */}
+    <div className="w-full mt-8 hidden sm:block">
       <div
         className={clsx(
           "footer text-orange1 font-dot py-2 px-4 text-center",

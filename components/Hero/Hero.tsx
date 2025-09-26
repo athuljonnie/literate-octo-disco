@@ -8,6 +8,7 @@ import AboutSection from "./AboutSection";
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Footer from "./Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -24,13 +25,14 @@ const Hero: React.FC = () => {
     (state: RootState) => state.darkMode.isDarkMode
   );
   return (
-<div className={clsx(
-  "border-[1px] h-[90vh] w-screen sm:h-max",
-  {
-    "border-white": !isDarkMode,
-    "border-gray-500": isDarkMode, // Replace "border-electric" with your actual class for the dark mode border color.
-  }
-)}>      <div className="hero-container">
+    <div className={clsx(
+      "border-[1px] min-h-screen w-screen flex flex-col",
+      {
+        "border-white": !isDarkMode,
+        "border-gray-500": isDarkMode,
+      }
+    )}>
+      <div className="hero-container">
         {/* <Image src={Element} alt="hero-image" id='jonnie' width={1000} height={1000}/> */}
         <h2
           id="heading"
@@ -53,7 +55,10 @@ const Hero: React.FC = () => {
           Full Stack Developer * Innovator * Designer
         </h2>
       </div>    
-      <AboutSection/>
+      <div className="flex-1">
+        <AboutSection/>
+      </div>
+      <Footer/>
     </div>
   );
 };

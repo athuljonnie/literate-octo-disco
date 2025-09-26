@@ -7,7 +7,6 @@ import Projects from "./Projects";
 import Arsenal from "@/components/Hero/Arsenal";
 import Experience from "./Experience";
 import "../../styles/animations.css";
-import Footer from "./Footer";
 
 const AboutSection: React.FC = () => {
   const isDarkMode = useSelector(
@@ -17,11 +16,11 @@ const AboutSection: React.FC = () => {
   // Function to navigate to the given URL
 
   return (
-    <div className="flex py-[0px] px-[0px] max-h-[80vh] flex-col lg:flex-row justify-between gap-0">
+    <div className="flex py-[0px] px-[0px] min-h-[80vh] flex-col lg:flex-row justify-between gap-0">
       {/* About Section Card */}
       <div
         id="scrollable-div"
-        className="px-0 sm:px-6 min-w-[300px] sm:min-w-[400px] lg:min-w-[60vw] max-w-full sm:max-w-xl lg:max-w-3xl mx-auto border dark:border-gray-700 lg:overflow-auto about-section"
+        className="px-0 sm:px-6 min-w-[300px] sm:min-w-[400px] lg:min-w-[60vw] max-w-full sm:max-w-xl lg:max-w-3xl mx-auto border dark:border-gray-700 max-h-[80vh] lg:overflow-auto about-section"
         >
         <div
           className={clsx("px-6 max-w-full ease-in duration-300 ", {

@@ -11,7 +11,7 @@ const Arsenal: React.FC = () => {
   return (
     <div
       className={clsx(
-        "flex-1 px-6 min-h-[80vh] tools-section",
+        "flex-1 px-6 max-h-[80vh] overflow-y-auto tools-section",
         isDarkMode ? "dark:bg-gray-800" : "bg-transparent",
         "border-[1px] border-b-0 border-t-0 border-l-0",
         isDarkMode ? "border-gray-600" : "border-white"
