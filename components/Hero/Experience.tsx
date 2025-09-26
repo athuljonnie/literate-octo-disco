@@ -49,7 +49,7 @@ const Experience:React.FC = () => {
                 <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls 30% and improving lead capture.</li>
                 <li>Optimized Go microservices and caching strategies to reduce p95 API latency from 280 ms to 180 ms (35% faster), increasing system reliability and scalability.</li>
                 <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
-              </ul>
+              </ul> 
             </li>
             <li className="py-5">
               <h4
