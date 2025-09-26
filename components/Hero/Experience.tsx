@@ -48,6 +48,7 @@ const Experience:React.FC = () => {
                 <li>Designed and deployed a hospital booking platform used by 5,000+ patients monthly, integrating a custom calendar, real-time doctor availability, and automated SMS reminders—cutting scheduling time by 40%.</li>
                 <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls &gt;30% and improving lead capture.</li>
                 <li>Optimized Go microservices and caching strategies to reduce p95 API latency from 280 ms to 180 ms (35% faster), increasing system reliability and scalability.</li>
+                <li>Optimized high-traffic automation workflows by rewriting n8n flows in Python and parallelizing I/O-bound tasks with ThreadPoolExecutor, cutting end-to-end execution time from ~25 s to ~8 s (~68% faster) and increasing throughput to 10 jobs/minute.</li>
                 <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
               </ul> 
             </li>
