@@ -60,7 +60,7 @@ const Experience: React.FC = () => {
               <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
             </ul> 
             <a href="https://vocallabs.ai" target="_blank" rel="noopener noreferrer" className={buttonClass}>Company Website</a>
-            <a href="https://linkedin.com/company/vocallabs" target="_blank" rel="noopener noreferrer" className={buttonClass}>LinkedIn</a>
+            <a href="https://linkedin.com/company/vocallabsai" target="_blank" rel="noopener noreferrer" className={buttonClass}>LinkedIn</a>
           </li>
 
           <li className="py-5">
@@ -81,8 +81,8 @@ const Experience: React.FC = () => {
               <li>Refactored and optimized critical JavaScript algorithms, improving frontend load performance by 25% (Lighthouse score 72→90), enhancing user experience across thousands of daily sessions.</li>
               <li>Collaborated with cross-functional teams to implement secure REST APIs and real-time features, strengthening application reliability and maintainability.</li>
             </ul>
-            <a href="https://phonologyit.com" target="_blank" rel="noopener noreferrer" className={buttonClass}>Company Website</a>
-            <a href="https://linkedin.com/company/phonologyit" target="_blank" rel="noopener noreferrer" className={buttonClass}>LinkedIn</a>
+            <a href="https://phonology.io" target="_blank" rel="noopener noreferrer" className={buttonClass}>Company Website</a>
+            <a href="https://linkedin.com/company/phonology" target="_blank" rel="noopener noreferrer" className={buttonClass}>LinkedIn</a>
           </li>
 
           <li className="py-5">
