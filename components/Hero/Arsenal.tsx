@@ -25,6 +25,30 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
+          Languages
+        </h6>
+        <ul
+          className={clsx(
+            "list-disc list-inside font-mono",
+            isDarkMode ? "text-white" : "text-black"
+          )}
+        >
+          <li>Go (Golang).</li>
+          <li>Python.</li>
+          <li>JavaScript.</li>
+          <li>TypeScript.</li>
+          <li>SQL.</li>
+        </ul>
+      </div>
+
+      {/* Frontend Section */}
+      <div className="mt-2">
+        <h6
+          className={clsx(
+            "text-xl font-dot ",
+            isDarkMode ? "text-blue1" : "text-orange1"
+          )}
+        >
           Frontend
         </h6>
         <ul
@@ -59,6 +83,8 @@ const Arsenal: React.FC = () => {
         >
           <li>Node.js.</li>
           <li>Express.js.</li>
+          <li>FastAPI.</li>
+          <li>n8n.</li>
         </ul>
       </div>
 
@@ -78,10 +104,58 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-gray-200" : "text-black"
           )}
         >
+          <li>PostgreSQL.</li>
           <li>MongoDB.</li>
           <li>MySQL.</li>
-          <li>PostgreSQL.</li>
-          <li>NEON DB.</li>
+          <li>Redis.</li>
+        </ul>
+      </div>
+
+      {/* AI/ML Section */}
+      <div className="mt-2">
+        <h6
+          className={clsx(
+            "text-xl font-dot ",
+            isDarkMode ? "text-blue1" : "text-orange1"
+          )}
+        >
+          AI / ML
+        </h6>
+        <ul
+          className={clsx(
+            "list-disc list-inside font-mono",
+            isDarkMode ? "text-white" : "text-black"
+          )}
+        >
+          <li>Conversational AI.</li>
+          <li>NLP (spaCy, transformers).</li>
+          <li>Voice Bots.</li>
+          <li>LLM integration.</li>
+          <li>WebRTC.</li>
+        </ul>
+      </div>
+
+      {/* Cloud & DevOps Section */}
+      <div className="mt-2">
+        <h6
+          className={clsx(
+            "text-xl font-dot ",
+            isDarkMode ? "text-blue1" : "text-orange1"
+          )}
+        >
+          Cloud & DevOps
+        </h6>
+        <ul
+          className={clsx(
+            "list-disc list-inside font-mono",
+            isDarkMode ? "text-white" : "text-black"
+          )}
+        >
+          <li>AWS (EC2, S3, SES).</li>
+          <li>Docker.</li>
+          <li>Nginx.</li>
+          <li>GitHub Actions CI/CD.</li>
+          <li>Linux.</li>
         </ul>
       </div>
 
@@ -106,26 +180,6 @@ const Arsenal: React.FC = () => {
         </ul>
       </div>
 
-      {/* Other Tools Section */}
-      <div className="mt-2">
-        <h6
-          className={clsx(
-            "text-xl font-dot ",
-            isDarkMode ? "text-blue1" : "text-orange1"
-          )}
-        >
-          Other Tools
-        </h6>
-        <ul
-          className={clsx(
-            "list-disc list-inside font-mono",
-            isDarkMode ? "text-white" : "text-black"
-          )}
-        >
-          <li>Git.</li>
-          <li>AWS Hosting Services.</li>
-        </ul>
-      </div>
     </div>
   );
 };

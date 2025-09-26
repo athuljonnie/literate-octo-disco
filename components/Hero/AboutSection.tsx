@@ -49,12 +49,13 @@ const AboutSection: React.FC = () => {
               }
             )}
           >
-            Developer | Gamer | Tech Enthusiast
+            Full-Stack Software Engineer | AI/ML Specialist | Cloud-Native Developer
           </h4>
           <p className="font-mono mt-2">🏡Kochi, KL</p>
           <p className="font-mono mt-0">
-            I’m a self-taught full stack developer who believes resilience and
-            continuous learning are the true keys to success.
+            Full-Stack Software Engineer specializing in Go, Python, JavaScript/TypeScript, and AI/ML-driven applications.
+            Proven ability to design and scale cloud-native microservices, build intelligent voice and conversational agents, 
+            and deliver production systems that handle 10k+ real-time interactions monthly.
           </p>
           <button
             className={clsx(

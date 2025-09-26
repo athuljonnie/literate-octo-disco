@@ -55,6 +55,136 @@ const Projects: React.FC = () => {
                   "text-blue1": isDarkMode,
                 }
               )}
+            >
+              VocalAssist
+            </h4>
+            <p className="font-mono">AI-driven conversational platform that automates call management and meeting scheduling</p>
+            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>React</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>Node.js</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>Go</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>PostgreSQL</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>n8n</span>
+              </div>
+            </div>
+            <ul className='list-disc list-inside font-mono text-sm'>
+              <li>Built full-stack solution serving 10,000+ customer interactions, reducing manual follow-ups by 40%</li>
+              <li>Implemented multi-persona AI agents for Call Management and Meeting Coordination using LLM integration</li>
+            </ul>
+          </li>
+
+          <li className="py-5">
+            <h4
+              className={clsx(
+                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                {
+                  "text-red": !isDarkMode,
+                  "text-blue1": isDarkMode,
+                }
+              )}
+            >
+              useVocal
+            </h4>
+            <p className="font-mono">Generative AI platform for meeting scheduling, call/chat management, and lead qualification</p>
+            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>AWS</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>Serverless</span>
+              </div>
+              <div
+                className={clsx(
+                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
+                  {
+                    "bg-indigo text-black": !isDarkMode,
+                    "bg-gray-500 text-white": isDarkMode,
+                  }
+                )}
+              >
+                <span>AI/ML</span>
+              </div>
+            </div>
+            <ul className='list-disc list-inside font-mono text-sm'>
+              <li>Engineered serverless architecture enabling 24/7 intelligent scheduling and cutting appointment friction by 50%</li>
+              <li>Boosted meeting confirmation rates 40% with AI reminders and smart follow-ups</li>
+            </ul>
+          </li>
+
+          <li className="py-5">
+            <h4
+              className={clsx(
+                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                {
+                  "text-red": !isDarkMode,
+                  "text-blue1": isDarkMode,
+                }
+              )}
               onClick={navigateToCalendly} // Attach the navigate function to the onClick event
             >
               Calendly Clone

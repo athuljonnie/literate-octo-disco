@@ -39,37 +39,16 @@ const Experience:React.FC = () => {
                     "text-blue1": isDarkMode,
                   }
                 )}
-                // onClick={navigateToCalendly} // Attach the navigate function to the onClick event
               >
-                Phonology IT Solutions
+                Vocallabs AI
               </h4>
-              <p className="font-mono">Full Stack Developer</p>
-              <p className="font-mono"><i>January 2024 - Present</i></p>
-              {/* <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>NextJS</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>ShadCN</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Neon DB</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Drizzler ORM</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Google Cloud Platform</span>
-                </div>
-              </div> */}
+              <p className="font-mono">Software Developer</p>
+              <p className="font-mono"><i>January 2025 - Present</i></p>
               <ul className='list-disc list-inside font-mono'>
-                <li>Designed and developed a full-stack application, resulting in a 60% increase in sales.</li>
-                <li>Enhanced customer interaction by integrating zoho forms and salesIQ.</li>
-                <li>Migrated a Create React App to Next.js to improve SEO and performance.</li>
-                <li>Tested and developed APIs for PortaOne to ensure reliability and scalability.</li>
-                <li>Improved code quality and application performance by implementing Redux for state management.</li>
-                <li>Developed a backend system with authentication to create B2B communication blogs, optimized for complete SEO.</li>
-                <li>Developed a backend system with authentication for creating customer support documentation, fully optimized for SEO.</li>
+                <li>Designed and deployed a hospital booking platform used by 5,000+ patients monthly, integrating a custom calendar, real-time doctor availability, and automated SMS reminders—cutting scheduling time by 40%.</li>
+                <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls >30% and improving lead capture.</li>
+                <li>Optimized Go microservices and caching strategies to reduce p95 API latency from 280 ms to 180 ms (35% faster), increasing system reliability and scalability.</li>
+                <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
               </ul>
             </li>
             <li className="py-5">
@@ -81,39 +60,38 @@ const Experience:React.FC = () => {
                     "text-blue1": isDarkMode,
                   }
                 )}
-                // onClick={navigateToCalendly} // Attach the navigate function to the onClick event
+              >
+                Phonology IT Solutions
+              </h4>
+              <p className="font-mono">Full Stack Developer</p>
+              <p className="font-mono"><i>January 2024 - January 2025</i></p>
+              <ul className='list-disc list-inside font-mono'>
+                <li>Refactored and optimized critical JavaScript algorithms, improving frontend load performance by 25% (Lighthouse score 72→90), enhancing user experience across thousands of daily sessions.</li>
+                <li>Collaborated with cross-functional teams to implement secure REST APIs and real-time features, strengthening application reliability and maintainability.</li>
+              </ul>
+            </li>
+            <li className="py-5">
+              <h4
+                className={clsx(
+                  "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                  {
+                    "text-red": !isDarkMode,
+                    "text-blue1": isDarkMode,
+                  }
+                )}
               >
                 Brototype
               </h4>
               <p className="font-mono">Full Stack Developement Intern</p>
               <p className="font-mono"><i>Decemeber 2022 - November 2023</i></p>
-              {/* <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>NextJS</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>ShadCN</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Neon DB</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Drizzler ORM</span>
-                </div>
-                <div className="bg-indigo text-black px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2">
-                  <span>Google Cloud Platform</span>
-                </div>
-              </div> */}
               <ul className='list-disc list-inside font-mono'>
                 <li>Acquired foundational programming skills through self-learning and practice.</li>
                 <li>Developed and deployed a full-stack e-commerce application using Node.js, Handlebars, MongoDB, and Express.js.</li>
                 <li>Recognized with &lsquo;Communication of the Month&lsquo; award for exceptional communication skills.</li>             
               </ul>
             </li>
-          
           </ul>
         </div>
-      
     </div>
   )
 }
