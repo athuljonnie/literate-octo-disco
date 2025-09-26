@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { Inter } from "next/font/google";
-import RadioButtonCheckedOutlinedIcon from '@mui/icons-material/RadioButtonCheckedOutlined';
+import { Sun, Moon } from 'lucide-react';
 import clsx from "clsx";
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '../../redux/store';
@@ -44,12 +44,12 @@ const NavBar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between "> 
         <button
           onClick={toggleTheme}
-          className={clsx("ease-in duration-300 px-1 py-0 text-[12px] md:hidden", {
+          className={clsx("ease-in duration-300 px-2 py-1 rounded-full hover:bg-opacity-20 hover:bg-white transition-all md:hidden", {
             "text-white-300 text-white": isDarkMode,
             "bg-transparent text-orange1 border-white": !isDarkMode,
           })}
         >
-          <RadioButtonCheckedOutlinedIcon />
+          {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
         <div
           className={clsx("hidden md:flex justify-center space-x-10", {
@@ -62,12 +62,12 @@ const NavBar: React.FC = () => {
        
           <button
             onClick={toggleTheme}
-            className={clsx("ease-in duration-300 px-1 py-0 text-[12px]", {
+            className={clsx("ease-in duration-300 px-2 py-1 rounded-full hover:bg-opacity-20 hover:bg-white transition-all", {
               "text-white-300 text-white": isDarkMode,
               "bg-transparent text-orange1 border-white": !isDarkMode,
             })}
           >
-            <RadioButtonCheckedOutlinedIcon />
+            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           
         </div>
