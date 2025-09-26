@@ -46,7 +46,7 @@ const Experience:React.FC = () => {
               <p className="font-mono"><i>January 2025 - Present</i></p>
               <ul className='list-disc list-inside font-mono'>
                 <li>Designed and deployed a hospital booking platform used by 5,000+ patients monthly, integrating a custom calendar, real-time doctor availability, and automated SMS reminders—cutting scheduling time by 40%.</li>
-                <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls >30% and improving lead capture.</li>
+                <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls 30% and improving lead capture.</li>
                 <li>Optimized Go microservices and caching strategies to reduce p95 API latency from 280 ms to 180 ms (35% faster), increasing system reliability and scalability.</li>
                 <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
               </ul>
