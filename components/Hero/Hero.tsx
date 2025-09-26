@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             " text-electric border-b-[1px] border-white": isDarkMode,
           })}
         >
-          Software Engineer * AI/ML Enthusiast * 
+          Software Engineer * AI/ML Enthusiast * Automations
         </h2>
       </div>    
       <div className="flex-1">
