@@ -211,7 +211,6 @@ const Projects: React.FC = () => {
                   "text-blue1": isDarkMode,
                 }
               )}
-              onClick={navigateToExcel2db}
             >
               n8n Helper Utilities
             </h4>
