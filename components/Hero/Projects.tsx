@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
     window.open("https://github.com/athuljonnie/calendly-clone", "_blank");
   };
   const navigateToVocalAssist = () => {
-    window.open("#", "_blank"); // Replace with actual URL when available
+    window.open("https://vocalassist.ai", "_blank"); // Replace with actual URL when available
   };
   const navigateToSupportDocumentation = () => {
     window.open("https://github.com/athuljonnie/calendly-clone", "_blank");
