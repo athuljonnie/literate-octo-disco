@@ -3,7 +3,6 @@ import clsx from "clsx";
 import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa"; // Example icons
 
 const Arsenal: React.FC = () => {
   const isDarkMode = useSelector((state: RootState) => state.darkMode.isDarkMode);
@@ -33,13 +32,14 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-white" : "text-black"
           )}
         >
-          <li>React.</li>
-          <li>Next.js.</li>
-          <li>TypeScript.</li>
-          <li>HTML5 & CSS3.</li>
-          <li>Tailwind CSS.</li>
-          <li>Responsive Design.</li>
-          <li>SEO Optimization.</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>TypeScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Design</li>
+          <li>SEO Optimization</li>
         </ul>
       </div>
 
@@ -59,14 +59,14 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-white" : "text-black"
           )}
         >
-          <li>Node.js.</li>
-          <li>Express.js.</li>
-          <li>Python.</li>
-          <li>Golang.</li>
-          <li>REST APIs.</li>
-          <li>GraphQL.</li>
-          <li>n8n Workflow Automation.</li>
-          <li>Microservices.</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Python</li>
+          <li>Golang</li>
+          <li>REST APIs</li>
+          <li>GraphQL</li>
+          <li>n8n Workflow Automation</li>
+          <li>Microservices</li>
         </ul>
       </div>
 
@@ -86,11 +86,11 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-white" : "text-black"
           )}
         >
-          <li>PostgreSQL.</li>
-          <li>Hasura.</li>
-          <li>MongoDB.</li>
-          <li>SQL.</li>
-          <li>Data Modeling.</li>
+          <li>PostgreSQL</li>
+          <li>Hasura</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+          <li>Data Modeling</li>
         </ul>
       </div>
 
@@ -102,7 +102,7 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
-          DevOps / Hosting
+          DevOps & Hosting
         </h6>
         <ul
           className={clsx(
@@ -110,12 +110,12 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-gray-200" : "text-black"
           )}
         >
-          <li>AWS EC2.</li>
-          <li>Docker.</li>
-          <li>CI/CD.</li>
-          <li>Nginx.</li>
-          <li>Web Hosting.</li>
-          <li>Deployment Automation.</li>
+          <li>AWS EC2</li>
+          <li>Docker</li>
+          <li>CI/CD</li>
+          <li>Nginx</li>
+          <li>Web Hosting</li>
+          <li>Deployment Automation</li>
         </ul>
       </div>
 
@@ -135,15 +135,14 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-white" : "text-black"
           )}
         >
-          <li>n8n.</li>
-          <li>API Integrations (CRM, Email, Payment).</li>
-          <li>Chatwoot Bots (Telegram & WhatsApp).</li>
-          <li>Webhooks.</li>
-          <li>Conversational AI.</li>
+          <li>n8n</li>
+          <li>API Integrations (CRM, Email, Payment)</li>
+          <li>Chatwoot Bots (Telegram & WhatsApp)</li>
+          <li>Webhooks</li>
         </ul>
       </div>
 
-      {/* Other Tools Section */}
+      {/* Other Tools & Concepts Section */}
       <div className="mt-2">
         <h6
           className={clsx(
@@ -151,7 +150,7 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
-          Other Tools / Concepts
+          Other Tools & Concepts
         </h6>
         <ul
           className={clsx(
@@ -159,12 +158,13 @@ const Arsenal: React.FC = () => {
             isDarkMode ? "text-white" : "text-black"
           )}
         >
-          <li>Git & Version Control.</li>
-          <li>Agile.</li>
-          <li>Full-Stack Product Development.</li>
-          <li>Real-Time WebSocket Systems.</li>
-          <li>Workflow Optimization.</li>
-          <li>Technical Mentorship.</li>
+          <li>Git</li>
+          <li>Version Control</li>
+          <li>Agile</li>
+          <li>Full-Stack Product Development</li>
+          <li>Real-Time WebSocket Systems</li>
+          <li>Workflow Optimization</li>
+          <li>Technical Mentorship</li>
         </ul>
       </div>
 

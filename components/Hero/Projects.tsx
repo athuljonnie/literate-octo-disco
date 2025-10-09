@@ -3,7 +3,6 @@ import clsx from "clsx";
 import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa"; // Example icons
 
 const Projects: React.FC = () => {
   const isDarkMode = useSelector(
@@ -48,13 +47,21 @@ const Projects: React.FC = () => {
         >
           Projects.
         </p>
-        <ul className="list-decimal">
-          <li className="py-5">
+        <div className="space-y-8 mt-6">
+          {/* Vocal Assist Project */}
+          <div className={clsx(
+            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
+            {
+              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+            }
+          )}>
+            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
-                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
                 {
-                  "text-red": !isDarkMode,
+                  "text-red hover:text-orange1": !isDarkMode,
                   "text-blue1": isDarkMode,
                 }
               )}
@@ -62,87 +69,37 @@ const Projects: React.FC = () => {
             >
               Vocal Assist
             </h4>
-            <p className="font-mono">Full-stack platform enabling users to create and manage conversational AI agents.</p>
-            <p className="font-mono text-sm italic">Integrated Google OAuth, Calendar, and Contacts APIs for automated scheduling and conflict detection. Designed database schema, implemented payment workflows, and handled end-to-end deployment.</p>
-            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot ">
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode, // Default mode styles
-                    "bg-gray-500 text-white": isDarkMode, // Dark mode styles
-                  }
-                )}
-              >
-                <span>React</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Node.js</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Google APIs</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Payment Integration</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>OAuth</span>
-              </div>
-              
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>PostgreSQL</span>
-              </div>
+            <p className="font-mono text-lg mb-2">Full-stack platform enabling users to create and manage conversational AI agents.</p>
+            <p className="font-mono text-sm italic mb-4 opacity-80">Integrated Google OAuth, Calendar, and Contacts APIs for automated scheduling and conflict detection. Designed database schema, implemented payment workflows, and handled end-to-end deployment.</p>
+            
+            <div className="flex flex-wrap gap-2 mb-4">
+              {['React', 'Node.js', 'Google APIs', 'Payment Integration', 'OAuth', 'PostgreSQL'].map((tech) => (
+                <span
+                  key={tech}
+                  className={clsx(
+                    "px-3 py-1 text-xs rounded-full font-dot transition-all duration-200 hover:scale-105",
+                    {
+                      "bg-orange1 text-white": !isDarkMode,
+                      "bg-electric text-black": isDarkMode,
+                    }
+                  )}
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
             
             {/* Mobile App Collaboration Sub-project */}
-            <div className="ml-4 mt-3 border-l-2 border-gray-300 pl-4">
+            <div className={clsx(
+              "ml-4 mt-4 border-l-2 pl-4 py-2 rounded-r-lg",
+              {
+                "border-gray-300 bg-gray-25": !isDarkMode,
+                "border-gray-600 bg-gray-750": isDarkMode,
+              }
+            )}>
               <h5
                 className={clsx(
-                  "font-dot text-lg ease-in duration-300",
+                  "font-dot text-lg mb-2 ease-in duration-300",
                   {
                     "text-orange1": !isDarkMode,
                     "text-blue1": isDarkMode,
@@ -151,40 +108,40 @@ const Projects: React.FC = () => {
               >
                 Mobile App Collaboration
               </h5>
-              <p className="font-mono text-sm">Supervised intern in building and deploying mobile version of Vocal Assist. Implemented Google Auth and managed release pipeline.</p>
-              <div className="mt-2 flex flex-wrap gap-1 font-dot">
-                <div
-                  className={clsx(
-                    "px-3 py-1 text-xs rounded-lg shadow-lg",
-                    {
-                      "bg-gray-200 text-black": !isDarkMode,
-                      "bg-gray-600 text-white": isDarkMode,
-                    }
-                  )}
-                >
-                  Mobile Development
-                </div>
-                <div
-                  className={clsx(
-                    "px-3 py-1 text-xs rounded-lg shadow-lg",
-                    {
-                      "bg-gray-200 text-black": !isDarkMode,
-                      "bg-gray-600 text-white": isDarkMode,
-                    }
-                  )}
-                >
-                  Technical Mentorship
-                </div>
+              <p className="font-mono text-sm mb-2">Supervised intern in building and deploying mobile version of Vocal Assist. Implemented Google Auth and managed release pipeline.</p>
+              <div className="flex flex-wrap gap-2">
+                {['Mobile Development', 'Technical Mentorship'].map((tech) => (
+                  <span
+                    key={tech}
+                    className={clsx(
+                      "px-2 py-1 text-xs rounded-full font-dot",
+                      {
+                        "bg-gray-200 text-gray-700": !isDarkMode,
+                        "bg-gray-600 text-gray-200": isDarkMode,
+                      }
+                    )}
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
-          </li>
+          </div>
 
-          <li className="py-5">
+          {/* voCal Project */}
+          <div className={clsx(
+            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
+            {
+              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+            }
+          )}>
+            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
-                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
                 {
-                  "text-red": !isDarkMode,
+                  "text-red hover:text-orange1": !isDarkMode,
                   "text-blue1": isDarkMode,
                 }
               )}
@@ -192,91 +149,39 @@ const Projects: React.FC = () => {
             >
               voCal
             </h4>
-            <p className="font-mono">
+            <p className="font-mono text-lg mb-2">
               Full-stack appointment booking platform for businesses, initially targeting healthcare.
             </p>
-            <p className="font-mono text-sm italic">Built custom calendar system for resource availability, leave tracking, and conflict management. Implemented agent onboarding, pre-configured conversational AI agents, and inbound numbers. Developed production-ready n8n workflows for scheduling and conflict resolution.</p>
-            {/* Technologies Section with Card Layout */}
-
-            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode, // Default mode (light) styles
-                    "bg-gray-500 text-white": isDarkMode, // Dark mode styles
-                  }
-                )}
-              >
-                <span>React</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Node.js</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Custom Calendar</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>n8n Workflows</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>WebSocket</span>
-              </div>
-              
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>WhatsApp Integration</span>
-              </div>
+            <p className="font-mono text-sm italic mb-4 opacity-80">Built custom calendar system for resource availability, leave tracking, and conflict management. Implemented agent onboarding, pre-configured conversational AI agents, and inbound numbers. Developed production-ready n8n workflows for scheduling and conflict resolution.</p>
+            
+            <div className="flex flex-wrap gap-2 mb-4">
+              {['React', 'Node.js', 'Custom Calendar', 'n8n Workflows', 'WebSocket', 'WhatsApp Integration'].map((tech) => (
+                <span
+                  key={tech}
+                  className={clsx(
+                    "px-3 py-1 text-xs rounded-full font-dot transition-all duration-200 hover:scale-105",
+                    {
+                      "bg-orange1 text-white": !isDarkMode,
+                      "bg-electric text-black": isDarkMode,
+                    }
+                  )}
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
             
-            {/* Mobile App Collaboration Sub-project for voCal */}
-            <div className="ml-4 mt-3 border-l-2 border-gray-300 pl-4">
+            {/* Mobile App Extension Sub-project */}
+            <div className={clsx(
+              "ml-4 mt-4 border-l-2 pl-4 py-2 rounded-r-lg",
+              {
+                "border-gray-300 bg-gray-25": !isDarkMode,
+                "border-gray-600 bg-gray-750": isDarkMode,
+              }
+            )}>
               <h5
                 className={clsx(
-                  "font-dot text-lg ease-in duration-300",
+                  "font-dot text-lg mb-2 ease-in duration-300",
                   {
                     "text-orange1": !isDarkMode,
                     "text-blue1": isDarkMode,
@@ -287,14 +192,22 @@ const Projects: React.FC = () => {
               </h5>
               <p className="font-mono text-sm">Extended voCal platform to mobile with cross-platform compatibility and real-time synchronization.</p>
             </div>
-          </li>
+          </div>
 
-          <li className="py-5">
+          {/* n8n Helper Utilities Project */}
+          <div className={clsx(
+            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
+            {
+              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+            }
+          )}>
+            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
-                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
                 {
-                  "text-red": !isDarkMode,
+                  "text-red hover:text-orange1": !isDarkMode,
                   "text-blue1": isDarkMode,
                 }
               )}
@@ -302,69 +215,43 @@ const Projects: React.FC = () => {
             >
               n8n Helper Utilities
             </h4>
-            <p className="font-mono">
+            <p className="font-mono text-lg mb-2">
               Built reusable workflow utilities to improve scalability and minimize redundant logic.
             </p>
-            <p className="font-mono text-sm italic">Created modular n8n components for common operations like data validation, API error handling, and webhook processing. Reduced development time by 60% for new workflow implementations.</p>
-            {/* Technologies Section with Card Layout */}
-
-            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode, // Light mode styles
-                    "bg-gray-500 text-white": isDarkMode, // Dark mode styles
-                  }
-                )}
-              >
-                <span>n8n</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Workflow Automation</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Scalability</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>API Integration</span>
-              </div>
+            <p className="font-mono text-sm italic mb-4 opacity-80">Created modular n8n components for common operations like data validation, API error handling, and webhook processing. Reduced development time by 60% for new workflow implementations.</p>
+            
+            <div className="flex flex-wrap gap-2">
+              {['n8n', 'Workflow Automation', 'Scalability', 'API Integration'].map((tech) => (
+                <span
+                  key={tech}
+                  className={clsx(
+                    "px-3 py-1 text-xs rounded-full font-dot transition-all duration-200 hover:scale-105",
+                    {
+                      "bg-orange1 text-white": !isDarkMode,
+                      "bg-electric text-black": isDarkMode,
+                    }
+                  )}
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
-          </li>
+          </div>
           
-          <li className="py-5">
+          {/* Phonology Blog Platform Project */}
+          <div className={clsx(
+            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
+            {
+              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+            }
+          )}>
+            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
-                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
+                "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
                 {
-                  "text-red": !isDarkMode,
+                  "text-red hover:text-orange1": !isDarkMode,
                   "text-blue1": isDarkMode,
                 }
               )}
@@ -372,63 +259,29 @@ const Projects: React.FC = () => {
             >
               Phonology Blog Platform
             </h4>
-            <p className="font-mono">
+            <p className="font-mono text-lg mb-2">
               Full-stack blog platform with admin dashboard and content management system.
             </p>
-            <p className="font-mono text-sm italic">Built and deployed landing page and admin dashboard using Next.js, optimized for SEO and traffic. Integrated Zoho CRM and automated workflows for lead management.</p>
-            {/* Technologies Section with Card Layout */}
-
-            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode, // Light mode styles
-                    "bg-gray-500 text-white": isDarkMode, // Dark mode styles
-                  }
-                )}
-              >
-                <span>Next.js</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>SEO Optimization</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Zoho CRM</span>
-              </div>
-              
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Content Management</span>
-              </div>
+            <p className="font-mono text-sm italic mb-4 opacity-80">Built and deployed landing page and admin dashboard using Next.js, optimized for SEO and traffic. Integrated Zoho CRM and automated workflows for lead management.</p>
+            
+            <div className="flex flex-wrap gap-2">
+              {['Next.js', 'SEO Optimization', 'Zoho CRM', 'Content Management'].map((tech) => (
+                <span
+                  key={tech}
+                  className={clsx(
+                    "px-3 py-1 text-xs rounded-full font-dot transition-all duration-200 hover:scale-105",
+                    {
+                      "bg-orange1 text-white": !isDarkMode,
+                      "bg-electric text-black": isDarkMode,
+                    }
+                  )}
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
