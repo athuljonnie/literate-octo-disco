@@ -50,13 +50,12 @@ const Projects: React.FC = () => {
         <div className="space-y-8 mt-6">
           {/* Vocal Assist Project */}
           <div className={clsx(
-            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
+            "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg bg-transparent",
             {
-              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
-              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+              "bg-0 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-0 border-electric hover:bg-gray-700": isDarkMode,
             }
           )}>
-            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
                 "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
@@ -132,11 +131,10 @@ const Projects: React.FC = () => {
           <div className={clsx(
             "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
             {
-              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
-              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+              "bg-0 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-0 border-electric hover:bg-gray-700": isDarkMode,
             }
           )}>
-            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
                 "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
@@ -198,11 +196,10 @@ const Projects: React.FC = () => {
           <div className={clsx(
             "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
             {
-              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
-              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+              "bg-0 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-0 border-electric hover:bg-gray-700": isDarkMode,
             }
           )}>
-            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
                 "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
@@ -241,11 +238,10 @@ const Projects: React.FC = () => {
           <div className={clsx(
             "relative p-6 rounded-lg border-l-4 transition-all duration-300 hover:shadow-lg",
             {
-              "bg-gray-50 border-orange1 hover:bg-gray-100": !isDarkMode,
-              "bg-gray-800 border-electric hover:bg-gray-700": isDarkMode,
+              "bg-0 border-orange1 hover:bg-gray-100": !isDarkMode,
+              "bg-0 border-electric hover:bg-gray-700": isDarkMode,
             }
           )}>
-            <div className="absolute -left-2 top-6 w-4 h-4 rounded-full bg-orange1"></div>
             <h4
               className={clsx(
                 "font-dot text-2xl mb-3 ease-in duration-300 hover:cursor-pointer transition-colors",
