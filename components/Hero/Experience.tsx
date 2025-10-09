@@ -40,16 +40,17 @@ const Experience:React.FC = () => {
                   }
                 )}
               >
-                Vocallabs AI
+                VocalLabs.ai
               </h4>
-              <p className="font-mono">Software Developer</p>
-              <p className="font-mono"><i>January 2025 - Present</i></p>
+              <p className="font-mono">Software Engineer</p>
+              <p className="font-mono"><i>November 2023 - Present</i></p>
               <ul className='list-disc list-inside font-mono'>
-                <li>Designed and deployed a hospital booking platform used by 5,000+ patients monthly, integrating a custom calendar, real-time doctor availability, and automated SMS reminders—cutting scheduling time by 40%.</li>
-                <li>Developed AI-powered voice assistants with SIP, Asterisk, and Plivo to answer missed calls and auto-schedule Google Calendar meetings, reducing missed calls &gt;30% and improving lead capture.</li>
-                <li>Optimized Go microservices and caching strategies to reduce p95 API latency from 280 ms to 180 ms (35% faster), increasing system reliability and scalability.</li>
-                <li>Optimized high-traffic automation workflows by rewriting n8n flows in Python and parallelizing I/O-bound tasks with ThreadPoolExecutor, cutting end-to-end execution time from ~25 s to ~8 s (~68% faster) and increasing throughput to 10 jobs/minute.</li>
-                <li>Implemented multi-channel communication (Voice, WhatsApp, Email) for customer engagement, improving response rates by ~40%.</li>
+                <li>Built and maintained full-stack applications using React, Node.js, Express, Hasura, Python, and Go.</li>
+                <li>Designed and deployed n8n automation workflows to streamline backend logic and improve performance.</li>
+                <li>Developed scalable GraphQL and REST APIs, integrating CRM, email, and payment systems.</li>
+                <li>Managed hosting, CI/CD pipelines, and deployments via Docker and AWS EC2.</li>
+                <li>Implemented error handling, webhook tracking, and observability for system reliability.</li>
+                <li>Integrated agents with Chatwoot, enabling deployment as Telegram and WhatsApp bots.</li>
               </ul> 
             </li>
             <li className="py-5">
@@ -64,31 +65,13 @@ const Experience:React.FC = () => {
               >
                 Phonology IT Solutions
               </h4>
-              <p className="font-mono">Full Stack Developer</p>
-              <p className="font-mono"><i>January 2024 - January 2025</i></p>
+              <p className="font-mono">Backend & Full-Stack Developer</p>
+              <p className="font-mono"><i>Previous Role</i></p>
               <ul className='list-disc list-inside font-mono'>
-                <li>Refactored and optimized critical JavaScript algorithms, improving frontend load performance by 25% (Lighthouse score 72→90), enhancing user experience across thousands of daily sessions.</li>
-                <li>Collaborated with cross-functional teams to implement secure REST APIs and real-time features, strengthening application reliability and maintainability.</li>
-              </ul>
-            </li>
-            <li className="py-5">
-              <h4
-                className={clsx(
-                  "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
-                  {
-                    "text-red": !isDarkMode,
-                    "text-blue1": isDarkMode,
-                  }
-                )}
-              >
-                Brototype
-              </h4>
-              <p className="font-mono">Full Stack Developement Intern</p>
-              <p className="font-mono"><i>Decemeber 2022 - November 2023</i></p>
-              <ul className='list-disc list-inside font-mono'>
-                <li>Acquired foundational programming skills through self-learning and practice.</li>
-                <li>Developed and deployed a full-stack e-commerce application using Node.js, Handlebars, MongoDB, and Express.js.</li>
-                <li>Recognized with &lsquo;Communication of the Month&lsquo; award for exceptional communication skills.</li>             
+                <li>Built and deployed landing page and admin dashboard using Next.js, optimized for SEO and traffic.</li>
+                <li>Developed blog backend with admin interface for content management.</li>
+                <li>Integrated Zoho CRM and automated workflows for lead management.</li>
+                <li>Managed EC2 hosting, CI/CD setup, and production deployment.</li>
               </ul>
             </li>
           </ul>

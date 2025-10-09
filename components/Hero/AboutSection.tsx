@@ -48,13 +48,13 @@ const AboutSection: React.FC = () => {
               }
             )}
           >
-            Full-Stack Software Engineer | AI/ML Specialist | Cloud-Native Developer
+            Product-driven Software Engineer | Full-Stack Developer | Conversational AI Specialist
           </h4>
           <p className="font-mono mt-2">🏡Kochi, KL</p>
           <p className="font-mono mt-0">
-            Full-Stack Software Engineer specializing in Go, Python, JavaScript/TypeScript, and AI/ML-driven applications.
-            Proven ability to design and scale cloud-native microservices, build intelligent voice and conversational agents, 
-            and deliver production systems that handle 10k+ real-time interactions monthly.
+            Product-driven Software Engineer with nearly two years of experience building full-stack web applications and conversational AI platforms. 
+            Strong expertise in MERN stack, PostgreSQL, and backend development with Python and Golang, with hands-on experience in workflow automation using n8n. 
+            Skilled in designing scalable architectures, integrating APIs, and deploying production-ready applications.
           </p>
           <button
             className={clsx(

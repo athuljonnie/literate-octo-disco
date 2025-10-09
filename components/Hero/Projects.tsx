@@ -55,11 +55,11 @@ const Projects: React.FC = () => {
                   "text-blue1": isDarkMode,
                 }
               )}
-              onClick={navigateToCalendly} // Attach the navigate function to the onClick event
+              onClick={navigateToCalendly}
             >
-              Calendly Clone
+              Vocal Assist
             </h4>
-            <p className="font-mono">Serverless Architecture in Next JS</p>
+            <p className="font-mono">Full-stack platform enabling users to create and manage conversational AI agents.</p>
             <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot ">
               <div
                 className={clsx(
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>NextJS</span>
+                <span>React</span>
               </div>
 
               <div
@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>ShadCN</span>
+                <span>Node.js</span>
               </div>
 
               <div
@@ -94,7 +94,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Neon DB</span>
+                <span>Google APIs</span>
               </div>
 
               <div
@@ -106,7 +106,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Drizzler ORM</span>
+                <span>Payment Integration</span>
               </div>
 
               <div
@@ -118,7 +118,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Google Cloud Platform</span>
+                <span>OAuth</span>
               </div>
             </div>
           </li>
@@ -134,12 +134,10 @@ const Projects: React.FC = () => {
               )}
               onClick={navigateToBlog}
             >
-              Blog App for Phonology IT Solutions with Complete Search Engine
-              Optimization
+              voCal
             </h4>
             <p className="font-mono">
-              Full-stack blog application with complete search engine
-              optimization.
+              Full-stack appointment booking platform for businesses, initially targeting healthcare.
             </p>
             {/* Technologies Section with Card Layout */}
 
@@ -177,7 +175,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>MongoDB</span>
+                <span>Custom Calendar</span>
               </div>
 
               <div
@@ -189,7 +187,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>JWT</span>
+                <span>n8n Workflows</span>
               </div>
 
               <div
@@ -201,7 +199,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Draft Editor</span>
+                <span>WebSocket</span>
               </div>
             </div>
           </li>
@@ -217,11 +215,10 @@ const Projects: React.FC = () => {
               )}
               onClick={navigateToSupportDocumentation}
             >
-              Support Documentation Management System
+              Mobile App Collaboration
             </h4>
             <p className="font-mono">
-              Developed a secure web app for managing categorized support docs
-              with admin authentication and role-based access.
+              Supervised intern in building and deploying mobile version of Vocal Assist.
             </p>
             {/* Technologies Section with Card Layout */}
 
@@ -235,7 +232,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>React</span>
+                <span>Mobile Development</span>
               </div>
 
               <div
@@ -247,7 +244,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Node.js</span>
+                <span>Google Auth</span>
               </div>
 
               <div
@@ -259,7 +256,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>MongoDB</span>
+                <span>Release Pipeline</span>
               </div>
 
               <div
@@ -271,19 +268,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>JWT</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Draft Editor</span>
+                <span>Technical Mentorship</span>
               </div>
             </div>
           </li>
@@ -298,10 +283,10 @@ const Projects: React.FC = () => {
               )}
               onClick={navigateToExcel2db}
             >
-              Excel2db
+              n8n Helper Utilities
             </h4>
             <p className="font-mono">
-              Converts Excel files to structured database entries using xlsx.
+              Built reusable workflow utilities to improve scalability and minimize redundant logic.
             </p>
             {/* Technologies Section with Card Layout */}
 
@@ -315,7 +300,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>Node.js</span>
+                <span>n8n</span>
               </div>
 
               <div
@@ -327,7 +312,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>MongoDB</span>
+                <span>Workflow Automation</span>
               </div>
 
               <div
@@ -339,75 +324,7 @@ const Projects: React.FC = () => {
                   }
                 )}
               >
-                <span>XLSX</span>
-              </div>
-            </div>
-          </li>
-
-          <li className="py-5">
-            <h4
-              className={clsx(
-                "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300 decoration-dashed hover:cursor-pointer",
-                {
-                  "text-red": !isDarkMode,
-                  "text-blue1": isDarkMode,
-                }
-              )}
-              onClick={navigateToCyborg} // Attach the navigate function to the onClick event
-            >
-              E-commerce For Gaming Computers and peripherals
-            </h4>
-            <p className="font-mono">
-              Full-stack ecommerce application with full functionality of an
-              ecommerce.
-            </p>
-            <div className="mt-2 mb-2 flex flex-wrap gap-1 font-dot">
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode, // Light mode styles
-                    "bg-gray-500 text-white": isDarkMode, // Dark mode styles
-                  }
-                )}
-              >
-                <span>HandleBars</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Node.js</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>MongoDB</span>
-              </div>
-
-              <div
-                className={clsx(
-                  "px-4 py-2 max-h-[30px] rounded-lg shadow-lg flex items-center gap-2",
-                  {
-                    "bg-indigo text-black": !isDarkMode,
-                    "bg-gray-500 text-white": isDarkMode,
-                  }
-                )}
-              >
-                <span>Twilio</span>
+                <span>Scalability</span>
               </div>
             </div>
           </li>
