@@ -10,8 +10,8 @@ const Projects: React.FC = () => {
     (state: RootState) => state.darkMode.isDarkMode
   );
 
-  const navigateToBlog = () => {
-    window.open ("https://www.phonology.io/phonology-blogs", "_blank");
+  const navigateToVocal = () => {
+    window.open ("https://www.usevocal.app", "_blank");
   };
   const navigateToCyborg = () => {
     window.open ("https://github.com/athuljonnie/cyborg-gaming", "_blank");
@@ -188,7 +188,7 @@ const Projects: React.FC = () => {
                   "text-blue1": isDarkMode,
                 }
               )}
-              onClick={navigateToBlog}
+              onClick={navigateToVocal}
             >
               voCal
             </h4>
