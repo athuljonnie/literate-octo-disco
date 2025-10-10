@@ -252,7 +252,7 @@ const Projects: React.FC = () => {
               )}
               onClick={navigateToCyborg}
             >
-              Cyborg Gaming eCommerce
+              Cyborg Gaming
             </h4>
             <p className="font-mono text-lg mb-2">
               Full-stack ecom platform with admin dashboard, content management system adn production ready utilities.
