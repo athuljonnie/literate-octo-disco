@@ -252,15 +252,15 @@ const Projects: React.FC = () => {
               )}
               onClick={navigateToCyborg}
             >
-              Phonology Blog Platform
+              Cyborg Gaming eCommerce
             </h4>
             <p className="font-mono text-lg mb-2">
-              Full-stack blog platform with admin dashboard and content management system.
+              Full-stack ecom platform with admin dashboard, content management system adn production ready utilities.
             </p>
-            <p className="font-mono text-sm italic mb-4 opacity-80">Built and deployed landing page and admin dashboard using Next.js, optimized for SEO and traffic. Integrated Zoho CRM and automated workflows for lead management.</p>
+            <p className="font-mono text-sm italic mb-4 opacity-80">Built and deployed full stack ecom with admin dashboard using EJS, optimized for SEO and traffic. Integrated session management OTP verification and full utils to manage a ecom.</p>
             
             <div className="flex flex-wrap gap-2">
-              {['Next.js', 'SEO Optimization', 'Zoho CRM', 'Content Management'].map((tech) => (
+              {['Ejs', 'Nodejs', 'MongoDB', 'Payment Gateway'].map((tech) => (
                 <span
                   key={tech}
                   className={clsx(
