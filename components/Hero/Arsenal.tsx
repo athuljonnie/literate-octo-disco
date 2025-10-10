@@ -20,7 +20,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-4">
         <h6
           className={clsx(
-            "text-xl font-dot ",
+            "text-lg sm:text-xl font-dot ",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -28,7 +28,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-white" : "text-black"
           )}
         >
@@ -47,7 +47,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-2">
         <h6
           className={clsx(
-            "text-xl font-dot ",
+            "text-lg sm:text-xl font-dot ",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -55,7 +55,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-white" : "text-black"
           )}
         >
@@ -74,7 +74,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-2">
         <h6
           className={clsx(
-            "text-xl font-dot",
+            "text-lg sm:text-xl font-dot",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -82,7 +82,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-white" : "text-black"
           )}
         >
@@ -98,7 +98,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-2">
         <h6
           className={clsx(
-            "text-xl font-dot",
+            "text-lg sm:text-xl font-dot",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -106,7 +106,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-gray-200" : "text-black"
           )}
         >
@@ -123,7 +123,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-2">
         <h6
           className={clsx(
-            "text-xl font-dot ",
+            "text-lg sm:text-xl font-dot ",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -131,7 +131,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-white" : "text-black"
           )}
         >
@@ -146,7 +146,7 @@ const Arsenal: React.FC = () => {
       <div className="mt-2">
         <h6
           className={clsx(
-            "text-xl font-dot ",
+            "text-lg sm:text-xl font-dot ",
             isDarkMode ? "text-blue1" : "text-orange1"
           )}
         >
@@ -154,7 +154,7 @@ const Arsenal: React.FC = () => {
         </h6>
         <ul
           className={clsx(
-            "list-disc list-inside font-mono",
+            "list-disc list-inside font-mono text-xs sm:text-sm",
             isDarkMode ? "text-white" : "text-black"
           )}
         >
