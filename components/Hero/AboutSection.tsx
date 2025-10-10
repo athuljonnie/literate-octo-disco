@@ -20,17 +20,17 @@ const AboutSection: React.FC = () => {
       {/* About Section Card */}
       <div
         id="scrollable-div"
-        className="px-0 sm:px-6 min-w-[300px] sm:min-w-[400px] lg:min-w-[60vw] max-w-full sm:max-w-xl lg:max-w-3xl mx-auto border dark:border-gray-700 max-h-[80vh] lg:overflow-auto about-section"
+        className="px-0 sm:px-6 min-w-[300px] sm:min-w-[400px] lg:min-w-[60vw] max-w-full sm:max-w-xl lg:max-w-3xl mx-auto border dark:border-gray-700 max-h-[80vh] lg:overflow-auto about-section overflow-y-auto"
         >
         <div
-          className={clsx("px-6 max-w-full ease-in duration-300 ", {
+          className={clsx("px-3 sm:px-6 max-w-full ease-in duration-300 ", {
             "text-black border-orange1": !isDarkMode,
             "text-white border-gray-600": isDarkMode,
           })}
         >
           <p
             className={clsx(
-              "font-dot text-2xl pb-2 pt-10 border-b-[1px] md:text-lg lg:text-xl ease-in duration-300",
+              "font-dot text-xl sm:text-2xl pb-2 pt-6 sm:pt-10 border-b-[1px] md:text-lg lg:text-xl ease-in duration-300",
               {
                 "text-orange1 border-white": !isDarkMode,
                 "text-electric border-electric": isDarkMode,
@@ -41,7 +41,7 @@ const AboutSection: React.FC = () => {
           </p>
           <h4
             className={clsx(
-              "font-dot text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300",
+              "font-dot text-lg sm:text-xl pt-2 sm:text-base md:text-lg lg:text-xl ease-in duration-300",
               {
                 "text-red": !isDarkMode,
                 "text-blue1": isDarkMode,
@@ -51,14 +51,14 @@ const AboutSection: React.FC = () => {
             Product-driven Software Engineer | Full-Stack Developer | Conversational AI Specialist
           </h4>
           <p className="font-mono mt-2">🏡Kochi, KL</p>
-          <p className="font-mono mt-0">
+          <p className="font-mono mt-0 text-sm sm:text-base">
             Product-driven Software Engineer with nearly two years of experience building full-stack web applications and conversational AI platforms. 
             Strong expertise in MERN stack, PostgreSQL, and backend development with Python and Golang, with hands-on experience in workflow automation using n8n. 
             Skilled in designing scalable architectures, integrating APIs, and deploying production-ready applications.
           </p>
           <button
             className={clsx(
-              "py-2 px-5 mx-5 mt-5 font-dot bg-transparent rounded-[60px]",
+              "py-2 px-4 sm:px-5 mx-2 sm:mx-5 mt-5 font-dot bg-transparent rounded-[60px] text-sm sm:text-base",
               "border-[1px] text-orange1", // Shared classes
               {
                 "text-gray-500 border-electric": isDarkMode, // Adjust these for dark mode
@@ -71,7 +71,7 @@ const AboutSection: React.FC = () => {
 
    <button
   className={clsx(
-    "py-2 px-5 font-dot bg-transparent rounded-[60px] border-[1px]",
+    "py-2 px-4 sm:px-5 mx-2 sm:mx-0 font-dot bg-transparent rounded-[60px] border-[1px] text-sm sm:text-base",
     {
       "text-gray-500 border-electric": isDarkMode,
       "text-orange1 border-orange1": !isDarkMode,
