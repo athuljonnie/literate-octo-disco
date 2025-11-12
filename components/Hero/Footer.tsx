@@ -47,6 +47,15 @@ const Footer: React.FC = () => {
           >
             LinkedIn
           </a>
+          <a
+            href="tel:+919400251334"
+            className={clsx(
+              "mx-2",
+              isDarkMode ? "text-electric hover:text-blue-300" : "text-elctric"
+            )}
+          >
+            Ring Me
+          </a>
         </div>
       </div>
     </div>
